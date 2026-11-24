@@ -1,0 +1,18 @@
+name: ChosenOne
+version: 1.0.0
+main: com.example.chosenone.ChosenOne
+api-version: "1.21"
+description: Slot-machine "choosing one worthy" ritual with a floating chosen player, golden dust chains and a summoning circle.
+commands:
+  chosen:
+    description: Start the choosing ritual. Optionally name who gets chosen, or use "stop" to cancel.
+    usage: /chosen [player|stop]
+    permission: chosenone.use
+  chainstest:
+    description: Test only the golden chains, circle and snap animation.
+    usage: /chainstest [player] [seconds]
+    permission: chosenone.use
+permissions:
+  chosenone.use:
+    description: Allows starting the ritual and the chains test
+    default: op
